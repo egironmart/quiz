@@ -11,3 +11,8 @@ exports.answer = function(req, res) {
       res.render('quizes/answer', {respuesta: 'Incorrecto'});
    }
 };
+
+//Get quizes/question
+exports.autor = function(req, res) {
+   res.render('autor/autor', {});
+};
