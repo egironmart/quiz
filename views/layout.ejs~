@@ -25,7 +25,7 @@
 		 <span><a href="/autor/autor">Créditos</a></span>
 	      </nav>
 	      <section class="main" id="s1">
-		 <p><%- body %></p>
+		 <p><%- body %>
 	      </section>
 
 	      <footer class="main" id="f1">

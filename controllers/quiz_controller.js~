@@ -19,9 +19,25 @@ exports.index = function(req, res) {
    }).catch(function(error) {next(error);});
 };
 
+//Get /quizes/busca
+exports.busca = function(req, res) {
+     res.render('quizes/busca.ejs', {});
+}
+//Get /quizes/lista
+exports.lista = function(req, res) {
+//console.log("en req "+req.query.busca);
+console.log("en res "+res.query.busca);
+   var cambia = req.query.busca.replace(/ /g,'%');
+   var texto = " pregunta like '%"+cambia+"%'";
+
+   models.Quiz.findAll({where: texto}).then(function(quizes) {
+     res.render('quizes/lista.ejs', {quizes: quizes});
+   }).catch(function(error) {next(error);});
+};
+
 //Get quizes/:id
 exports.show = function(req, res) {
-  res.render('quizes/show', {quiz: req.quiz.pregunta});
+  res.render('quizes/show', {quiz: req.quiz});
 };
 
 //GET quizes/:id/answer
