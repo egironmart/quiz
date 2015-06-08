@@ -22,11 +22,12 @@ exports.index = function(req, res) {
 //Get /quizes/busca
 exports.busca = function(req, res) {
      res.render('quizes/busca.ejs', {});
-}
+};
+
 //Get /quizes/lista
 exports.lista = function(req, res) {
-//console.log("en req "+req.query.busca);
-console.log("en res "+res.query.busca);
+console.log("en req "+req.query.busca);
+//console.log("en res "+res.query.busca);
    var cambia = req.query.busca.replace(/ /g,'%');
    var texto = " pregunta like '%"+cambia+"%'";
 
@@ -47,6 +48,15 @@ exports.answer = function(req, res) {
       resultado = 'Correcto';
    }
    res.render('quizes/answer', {quiz: req.quiz, respuesta: resultado});
+};
+
+//Get quizes/new
+exports.new = function(req, res) {
+   var quiz = models.Quiz.build(
+      {pregunta: "Pregunta", respuesta: "Respuesta"}
+   );
+
+   res.render('quizes/new', {quiz: quiz});
 };
 
 //Get quizes/question
