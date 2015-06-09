@@ -94,6 +94,14 @@ exports.update = function(req, res) {
    });
 };
 
+
+//Delete /quizes/:id
+exports.destroy = function(req, res) {
+   req.quiz.destroy().then(function(){
+      res.redirect('/quizes');
+   }).catch(function(error){next(error)});
+};
+
 //Get quizes/autor
 exports.autor = function(req, res) {
    res.render('autor/autor', { errors: []});
