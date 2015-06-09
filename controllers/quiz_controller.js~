@@ -59,7 +59,24 @@ exports.new = function(req, res) {
    res.render('quizes/new', {quiz: quiz});
 };
 
+//POST /quizes/create
+exports.create = function(req, res) {
+   var quiz = models.Quiz.build(req.body.quiz);
+
+   quiz.validate().then(function(err){
+      if (err) {
+         res.render('quizes/new', {quiz: quiz, errors: err.errors});
+      } else {
+            //guarda la pregunta y respuesta en la base de datos
+            quiz.save({fields: ["pregunta", "respuesta"]}).then(function(){res.redirect('/quizes')})
+      }
+   });
+};
+
 //Get quizes/question
 exports.autor = function(req, res) {
    res.render('autor/autor', {});
 };
+
+
+
