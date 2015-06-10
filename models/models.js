@@ -49,3 +49,4 @@ sequelize.sync().success(function() {
       };
    });
 });
+
