@@ -37,6 +37,15 @@ nav span {
    margin: 0px 10px 0px 0px;
 }
 
+#tma {
+   text-align: left;
+}
+
+#crea {
+   text-align: center;
+   margin-top: 2%;
+}
+
 #ErrorMsg {
    color: #f61;
    font-size: smaller;
