@@ -1,0 +1,101 @@
+2015-06-11T14:43:14.206137+00:00 app[web.1]:     at require (module.js:380:17)
+2015-06-11T14:43:14.204328+00:00 app[web.1]: module.js:340
+2015-06-11T14:43:14.206142+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-06-11T14:43:14.206144+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-06-11T14:43:14.206140+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-06-11T14:43:14.206146+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-11T14:43:14.206136+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-11T14:43:14.206143+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-06-11T14:43:15.066515+00:00 heroku[web.1]: State changed from starting to crashed
+2015-06-11T14:43:15.051501+00:00 heroku[web.1]: Process exited with status 8
+2015-06-11T16:18:02.962090+00:00 heroku[web.1]: State changed from crashed to starting
+2015-06-11T16:18:05.066875+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-06-11T16:18:06.975363+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-11T16:18:06.975758+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-11T16:18:07.363560+00:00 app[web.1]: 
+2015-06-11T16:18:07.364963+00:00 app[web.1]:     throw err;
+2015-06-11T16:18:07.365170+00:00 app[web.1]:           ^
+2015-06-11T16:18:07.367129+00:00 app[web.1]: Error: Cannot find module 'inflection'
+2015-06-11T16:18:07.367133+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-06-11T16:18:07.367135+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-06-11T16:18:07.367136+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-11T16:18:07.367138+00:00 app[web.1]:     at require (module.js:380:17)
+2015-06-11T16:18:07.367140+00:00 app[web.1]:     at Object.<anonymous> (/app/node_modules/sequelize/lib/utils.js:8:18)
+2015-06-11T16:18:07.367141+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-06-11T16:18:07.367142+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-06-11T16:18:07.367144+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-06-11T16:18:07.367145+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-06-11T16:18:07.367147+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-11T16:18:07.364505+00:00 app[web.1]: module.js:340
+2015-06-11T16:18:08.251134+00:00 heroku[web.1]: State changed from starting to crashed
+2015-06-11T16:18:08.240291+00:00 heroku[web.1]: Process exited with status 8
+2015-06-11T21:16:39.118724+00:00 heroku[web.1]: State changed from crashed to starting
+2015-06-11T21:16:41.090322+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-06-11T21:16:42.492808+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-11T21:16:42.492834+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-11T21:16:42.790141+00:00 app[web.1]: 
+2015-06-11T21:16:42.790247+00:00 app[web.1]: module.js:340
+2015-06-11T21:16:42.790485+00:00 app[web.1]:     throw err;
+2015-06-11T21:16:42.790504+00:00 app[web.1]:           ^
+2015-06-11T21:16:42.792096+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-06-11T21:16:42.792097+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-06-11T21:16:42.792094+00:00 app[web.1]: Error: Cannot find module 'inflection'
+2015-06-11T21:16:42.792099+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-11T21:16:42.792100+00:00 app[web.1]:     at require (module.js:380:17)
+2015-06-11T21:16:42.792101+00:00 app[web.1]:     at Object.<anonymous> (/app/node_modules/sequelize/lib/utils.js:8:18)
+2015-06-11T21:16:42.792103+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-06-11T21:16:42.792104+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-06-11T21:16:42.792105+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-06-11T21:16:42.792106+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-06-11T21:16:42.792108+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-11T21:16:43.653274+00:00 heroku[web.1]: State changed from starting to crashed
+2015-06-11T21:16:43.639962+00:00 heroku[web.1]: Process exited with status 8
+2015-06-12T00:35:41.532157+00:00 heroku[web.1]: State changed from crashed to starting
+2015-06-12T00:35:44.902410+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-06-12T00:35:47.041001+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-12T00:35:47.041033+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-12T00:35:47.708785+00:00 app[web.1]: 
+2015-06-12T00:35:47.708867+00:00 app[web.1]: module.js:340
+2015-06-12T00:35:47.709122+00:00 app[web.1]:     throw err;
+2015-06-12T00:35:47.709127+00:00 app[web.1]:           ^
+2015-06-12T00:35:47.710860+00:00 app[web.1]: Error: Cannot find module 'inflection'
+2015-06-12T00:35:47.710863+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-06-12T00:35:47.710864+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-06-12T00:35:47.710866+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-12T00:35:47.710867+00:00 app[web.1]:     at require (module.js:380:17)
+2015-06-12T00:35:47.710869+00:00 app[web.1]:     at Object.<anonymous> (/app/node_modules/sequelize/lib/utils.js:8:18)
+2015-06-12T00:35:47.710871+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-06-12T00:35:47.710870+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-06-12T00:35:47.710873+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-06-12T00:35:47.710874+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-06-12T00:35:47.710875+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-12T00:35:48.609542+00:00 heroku[web.1]: Process exited with status 8
+2015-06-12T00:35:48.629307+00:00 heroku[web.1]: State changed from starting to crashed
+2015-06-12T04:26:30.263670+00:00 heroku[web.1]: State changed from crashed to starting
+2015-06-12T04:26:32.333629+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-06-12T04:26:33.771915+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-12T04:26:33.771939+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-12T04:26:34.087534+00:00 app[web.1]: module.js:340
+2015-06-12T04:26:34.087539+00:00 app[web.1]:           ^
+2015-06-12T04:26:34.087537+00:00 app[web.1]:     throw err;
+2015-06-12T04:26:34.087541+00:00 app[web.1]: Error: Cannot find module 'inflection'
+2015-06-12T04:26:34.087543+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-06-12T04:26:34.087546+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-12T04:26:34.087544+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-06-12T04:26:34.087548+00:00 app[web.1]:     at require (module.js:380:17)
+2015-06-12T04:26:34.087550+00:00 app[web.1]:     at Object.<anonymous> (/app/node_modules/sequelize/lib/utils.js:8:18)
+2015-06-12T04:26:34.087551+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-06-12T04:26:34.087553+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-06-12T04:26:34.087555+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-06-12T04:26:34.087556+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-06-12T04:26:34.087558+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-06-12T04:26:34.084106+00:00 app[web.1]: 
+2015-06-12T04:26:34.856840+00:00 heroku[web.1]: State changed from starting to crashed
+2015-06-12T04:26:34.847760+00:00 heroku[web.1]: Process exited with status 8
+2015-06-12T07:27:44.404862+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quizenrique.herokuapp.com request_id=f0d1b757-b9b8-49b7-95c4-4d652ad60433 fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
+2015-06-12T07:27:48.124345+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=quizenrique.herokuapp.com request_id=984fa33f-743c-4033-a291-2bdc25b9793f fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
+2015-06-12T07:27:48.288504+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=quizenrique.herokuapp.com request_id=39284235-a79d-4671-ada4-1c7f515a3be6 fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
+2015-06-12T07:30:53.671206+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quizenrique.herokuapp.com request_id=d9d9227d-5e26-4846-8990-8f984318fe75 fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
+2015-06-12T07:55:26.507980+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quizenrique.herokuapp.com request_id=9f284757-dbbc-4792-a95e-60ffc09fef5c fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
+2015-06-12T07:55:30.306427+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=quizenrique.herokuapp.com request_id=0fc0708f-6f0e-4ca2-bca8-1bb9d1cfa836 fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
+2015-06-12T07:55:30.436175+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=quizenrique.herokuapp.com request_id=174cd665-46df-4a09-ac27-c7c06b539d42 fwd="193.144.79.173" dyno= connect= service= status=503 bytes=
