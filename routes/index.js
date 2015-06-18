@@ -24,14 +24,18 @@ router.get('/quizes/:quizId(\\d+)',        quizController.show);
 router.get('/quizes/:quizId(\\d+)/answer', quizController.answer);
 router.get('/quizes/busca',                quizController.busca);
 router.get('/quizes/lista',                quizController.lista);
-router.get('/quizes/new',                  quizController.new);
-router.post('/quizes/create',              quizController.create);
-router.get('/quizes/:quizId(\\d+)/edit',   quizController.edit);
-router.put('/quizes/:quizId(\\d+)',        quizController.update);
-router.delete('/quizes/:quizId(\\d+)',     quizController.destroy);
 router.get('/autor/autor',                 quizController.autor);
 
+//Rutas de comentarios
 router.get('/quizes/:quizId(\\d+)/comments/new',   commentController.new);
 router.post('/quizes/:quizId(\\d+)/comments',      commentController.create);
+
+//Con autenticación
+router.get('/quizes/new',                  sessionController.loginRequired, quizController.new);
+router.post('/quizes/create',              sessionController.loginRequired, quizController.create);
+router.get('/quizes/:quizId(\\d+)/edit',   sessionController.loginRequired, quizController.edit);
+router.put('/quizes/:quizId(\\d+)',        sessionController.loginRequired, quizController.update);
+router.delete('/quizes/:quizId(\\d+)',     sessionController.loginRequired, quizController.destroy);
+
 
 module.exports = router;
