@@ -30,7 +30,7 @@ router.get('/autor/autor',                 quizController.autor);
 //Rutas de comentarios
 router.get('/quizes/:quizId(\\d+)/comments/new',   commentController.new);
 router.post('/quizes/:quizId(\\d+)/comments',      commentController.create);
-router.get('/quizes//:quizId(\\d+)/comments/:commentId(\\d+)/publish', sessionController.loginRequired, commentController.publish);
+router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish', sessionController.loginRequired, commentController.publish);
 
 //Con autenticación
 router.get('/quizes/new',                  sessionController.loginRequired, quizController.new);

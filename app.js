@@ -12,6 +12,8 @@ var routes = require('./routes/index');
 
 var app = express();
 
+var sesionAnt = "";
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -32,6 +34,7 @@ app.use(session());
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 //Helpers dinámicos
 app.use(function(req, res, next){
    //Guardar path en session.redir para después del login
@@ -41,6 +44,29 @@ app.use(function(req, res, next){
 
    //Hacer visible rreq.session en las vistas
    res.locals.session = req.session;
+   next();
+});
+
+
+//Control de auto-logout
+//Comprueba si han pasado 2 minutos y cancela la sesión
+app.use(function(req, res, next){
+
+   req.session.hora = new Date().getHours();
+   req.session.minuto = new Date().getMinutes();
+   var sesionAct = (req.session.hora * 60 * 60)+(req.session.minuto * 60); //Convertimos a segundos
+
+   sesionAnt = sesionAnt || 0;
+   if (!sesionAnt){
+      sesionAnt = (new Date().getHours() *60 * 60) + (new Date().getMinutes() * 60); //Convertimos a segundos
+   } else {
+      if ( (sesionAct - sesionAnt) > 120){   //Si la diferencia es mayor de 120 seg. (2 minutos)
+         delete req.session.user;            //destruímos el usuario.
+      }
+   }
+
+   sesionAnt = sesionAct;   //Marcamos esta sesión como anterior
+
    next();
 });
 

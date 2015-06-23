@@ -110,3 +110,26 @@ exports.autor = function(req, res) {
    res.render('autor/autor', { errors: []});
 };
 
+//Get estadistica/estadistica
+exports.estadistica = function(req, res) {
+
+var total_preg = 0;   //Total de preguntas
+var total_come = 0;   //Total de comentarios
+var total_sinc = 0;   //Total de preguntas SIN comentarios
+var texto = " id not in (select comments.QuizId from comments)"; //Where para buscar preguntas SIN comentarios
+
+models.Quiz.count()
+   .then(function(preguntas) {total_preg = preguntas;})
+   .then(function(){ return models.Comment.count().then(function(coment){total_come = coment;})})
+   .then(function(){ return models.Quiz.count({where: texto}).then(function(sin_coment){ total_sinc = sin_coment;})})
+   .finally(function(){
+      res.render('estadistica/estadistica.ejs', {totalPreguntas: total_preg, totalComentarios: total_come, sinComentarios: total_sinc, errors: []})
+   });
+
+};
+
+
+
+
+
+

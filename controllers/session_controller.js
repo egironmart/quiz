@@ -39,3 +39,4 @@ exports.destroy = function(req, res) {
    delete req.session.user;
    res.redirect(req.session.redir); //Redirecciona al path anterior al login
 };
+

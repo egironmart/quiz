@@ -26,6 +26,7 @@ router.get('/quizes/:quizId(\\d+)/answer', quizController.answer);
 router.get('/quizes/busca',                quizController.busca);
 router.get('/quizes/lista',                quizController.lista);
 router.get('/autor/autor',                 quizController.autor);
+router.get('/estadistica/estadistica',     quizController.estadistica);
 
 //Rutas de comentarios
 router.get('/quizes/:quizId(\\d+)/comments/new',   commentController.new);
