@@ -1,7 +1,7 @@
       <p><b>Estadística de preguntas</b></p>
       <p>Nº total de preguntas: <%=totalPreguntas%></p>
       <p>Nº total de comentarios: <%=totalComentarios%></p>
-      <p>Media comentarios/pregunta: <%=totalComentarios/totalPreguntas%></p>
+      <p>Media comentarios/pregunta: <%=(totalComentarios/totalPreguntas).toFixed(2)%></p>
       <p>Preguntas SIN comentarios: <%=sinComentarios%></p>
       <p>Preguntas CON comentarios: <%=totalPreguntas-sinComentarios%></p>
 

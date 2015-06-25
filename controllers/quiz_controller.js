@@ -116,7 +116,7 @@ exports.estadistica = function(req, res) {
 var total_preg = 0;   //Total de preguntas
 var total_come = 0;   //Total de comentarios
 var total_sinc = 0;   //Total de preguntas SIN comentarios
-var texto = ' id not in (select comments.QuizId from comments)'; //Where para buscar preguntas SIN comentarios
+var texto = ' id not in (select "QuizId" from "Comments")'; //Where para buscar preguntas SIN comentarios
 
 models.Quiz.count()
    .then(function(preguntas) {total_preg = preguntas;})

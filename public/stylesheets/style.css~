@@ -43,10 +43,23 @@ nav span {
 
 #crea {
    text-align: center;
-   margin-top: 10%;
+   margin-top: 2%;
 }
 
 #ErrorMsg {
    color: #f61;
    font-size: smaller;
+}
+
+.usuario {
+   border-radius: 5px 5px 5px 5px;
+   -moz-border-radius: 5px 5px 5px 5px;
+   -webkit-border-radius: 5px 5px 5px 5px;
+   border: 1px solid #B40431;
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
+.logout{
+   float: right;
 }
